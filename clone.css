@@ -1,0 +1,168 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+@media (max-width:1440) {
+    
+}
+.nav1{
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+}
+.nav1 img{
+    height: 70px;
+    width: 100px;
+}
+.nav1 .three{
+    display: flex;
+    font-size: 12px;
+    gap: 50px;
+    margin-left: 70px;
+}
+.nav1 .three h1:hover{
+    color: rgb(83, 29, 83);
+    position: relative;
+    bottom: 2px;
+    cursor: pointer;
+}
+.nav1 .three h1::after{
+    content: "|";
+    margin-left: 40px;
+    color: rgba(177, 53, 140, 0.486);
+    text-decoration: none;
+}
+.nav1 .two {
+    cursor: pointer;
+    display: flex;
+    font-size: 12px;
+    gap: 20px;
+    position: relative;
+}
+.nav1 .two h1:hover{
+    position: relative;
+    bottom: 2px;
+    cursor: pointer;
+}
+.nav1 .two h1{
+    text-align: center;
+    /* background-color: rebeccapurple; */
+    width: 60px;
+}
+.nav1 .two .icons{
+    width: 140px;
+    background-color: rgb(243, 0, 0);
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    top: 10px;
+}
+.two #pro:hover .icons .img1{
+      opacity: 1;
+      transform: translateY(-20px);
+}
+.icons .img1{
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+    position: relative;
+    transform: translateY(0px);
+}
+/* .icons img {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: opacity 1s, transform 1s;
+}
+.two:hover .icons img {
+    opacity: 1;
+    transform: translateX(-20px);
+} */
+.nav1 .two .icons img{
+    height: 30px;
+    width: 30px;
+}
+.nav1 input{
+    width: 250px;
+    height: 30px;
+    border-radius:5px;
+    border: solid 0.5px grey;
+    padding: 0px 10px;
+    margin-right:20px ;
+}
+
+
+
+
+
+
+
+.nav2{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+    height: 40px;
+    padding: 0px 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.116);
+
+}
+.nav2 ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    line-height: 40px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.nav2 ul :hover{
+    color: rgb(2, 32, 2);
+    cursor: pointer;
+    border-bottom:2px solid purple;
+}
+.nav2 ul li .container{
+    display: flex;
+    position: absolute;
+    background-color: #cacaca;
+    width: 97%;
+    height: 410px;
+    margin: 0px 20px;
+    border: 1px solid grey;
+    top: 113px;
+    left: 0px;
+    display: none;
+}
+@keyframes nav2_hover{
+    from{
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.nav2 ul li:hover .container{
+    animation: nav2_hover 0.5s ease-out ;
+    display: flex;
+}
+.nav2 ul li .container ul{
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+    height: 410px;
+    padding: 0px 30px;
+    gap: 0px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 0px;
+}
+.we .container ul .first{
+    color: purple;
+    font-size: large;
+    border-bottom: 0px;
+}
+
